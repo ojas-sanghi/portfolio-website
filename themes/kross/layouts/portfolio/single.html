@@ -15,9 +15,8 @@
             <div class="project-meta">
               <i class="ti-calendar"></i>
               <div class="ml-3">
-                <h4>Date</h4>
-                <p>{{ .PublishDate.Format "Jan 2006" }}</p>
-                <!-- <p>{{ .Params.Date | markdownify }}</p> -->
+                <h4>Date Started</h4>
+                <p>{{ .PublishDate.Format "January 2006" }}</p>
               </div>
             </div>
           </div>
@@ -37,7 +36,7 @@
               <i class="ti-folder"></i>
               <div class="ml-3">
                 <h4>Categories</h4>
-                <p>{{ delimit .Params.categories ", " | humanize }}</p>
+                <p>{{ delimit .Params.categories ", " }}</p>
               </div>
             </div>
           </div>
