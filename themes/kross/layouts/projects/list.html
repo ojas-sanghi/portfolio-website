@@ -11,13 +11,13 @@
           <label class="btn btn-sm btn-primary active">
             <input type="radio" name="shuffle-filter" value="all" checked="checked" />All
           </label>
-					{{ $categories := slice }}
-					{{ range .Data.Pages }}
-					{{ range .Params.categories }}
-					{{ $categories = $categories | append . }}
-					{{ end }}
-					{{ end }}
-					{{ range ( $categories | uniq ) }}
+          {{ $categories := slice }}
+          {{ range .Data.Pages }}
+          {{ range .Params.categories }}
+          {{ $categories = $categories | append . }}
+          {{ end }}
+          {{ end }}
+          {{ range ( $categories | uniq ) }}
           <label class="btn btn-sm btn-primary">
             <input type="radio" name="shuffle-filter" value="{{ . | urlize }}" />{{ . | humanize }}
           </label>
@@ -27,13 +27,13 @@
     </div>
     <div class="row shuffle-wrapper">
       {{ range .Data.Pages }}
-      <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[{{range $index, $element:= .Params.categories }}{{if ne $index 0}},{{end}}&quot;{{. | urlize}}&quot;{{ end }}]">
-        <div class="position-relative rounded hover-wrapper black-border no-bottom-border">
-          <img src="{{.Params.image | absURL }}" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
+      <div class="col-lg-4 col-6 mb-4 shuffle-item"
+        data-groups="[{{range $index, $element:= .Params.categories }}{{if ne $index 0}},{{end}}&quot;{{. | urlize}}&quot;{{ end }}]">
+        <div class="position-relative rounded hover-wrapper ">
+          <button type="button" class="btn" style="padding: 0%;" onclick="window.location.href=' {{ .Permalink }} ';">
+            <img src="{{.Params.image | absURL }}" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
+          </button>
           <div class="hover-overlay">
-            <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="{{ .Permalink }}">view project</a>
-            </div>
           </div>
         </div>
         <!-- title underneath card -->
@@ -50,6 +50,8 @@
   </div>
 </section>
 <!-- /portfolio -->
+
+<!-- TODO: make the top bar smaller in its scrolled-down mode -->
 
 <section class="section bg-light">
   <div class="container">
