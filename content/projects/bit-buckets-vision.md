@@ -1,10 +1,10 @@
 ---
-title: "TRTL-CLI-py"
-date: 2018-09-12T12:14:34+06:00
-image: "images/portfolio/trtl-cli-py.png"
-language: "Python"
-project_url : "https://github.com/turtlecoin/turtlecoin-cli-py"
-categories: ["cryptocurrency"]
+title: "Bit Buckets Vision Subsystem"
+date: 2020-01-12T12:14:34+06:00
+image: "images/portfolio/item-3.png"
+language: "Java"
+project_url : "https://github.com/BitBucketsFRC4183/FRC2020_Infinite_Recharge"
+categories: ["Robotics"]
 description: "This is meta description."
 draft: false
 ---

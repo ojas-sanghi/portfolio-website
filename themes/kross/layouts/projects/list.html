@@ -28,7 +28,7 @@
     <div class="row shuffle-wrapper">
       {{ range .Data.Pages }}
       <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[{{range $index, $element:= .Params.categories }}{{if ne $index 0}},{{end}}&quot;{{. | urlize}}&quot;{{ end }}]">
-        <div class="position-relative rounded hover-wrapper">
+        <div class="position-relative rounded hover-wrapper black-border no-bottom-border">
           <img src="{{.Params.image | absURL }}" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
           <div class="hover-overlay">
             <div class="hover-content">
@@ -36,6 +36,14 @@
             </div>
           </div>
         </div>
+        <!-- title underneath card -->
+        <article class="card shadow bg-gray">
+          <div class="card-body">
+            <h4 class="card-title"><a class="text-dark" href="{{.Permalink}}">{{.Title }}</a>
+            </h4>
+          </div>
+        </article>
+
       </div>
       {{ end }}
     </div>

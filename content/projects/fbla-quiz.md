@@ -1,10 +1,10 @@
 ---
-title: "Chukwa's Labyrinth"
-date: 2020-06-12T12:14:34+06:00
-image: "images/portfolio/chukwas-labyrinth.png"
-language: "Godot, GDScript"
-project_url : "https://github.com/Sajo8/chukwas-labyrinth/"
-categories: ["Video Game Dev"]
+title: "FBLA Quiz App"
+date: 2020-12-12T12:14:34+06:00
+image: "images/portfolio/fbla-quiz.png"
+language: "Python"
+project_url : "Client: https://github.com/ojas-sanghi/FBLA-Quiz \n Server: https://github.com/ojas-sanghi/FBLA-Quiz-Server"
+categories: ["App Dev."]
 description: "This is meta description."
 draft: false
 ---

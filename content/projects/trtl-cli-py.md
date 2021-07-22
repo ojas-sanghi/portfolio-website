@@ -1,10 +1,10 @@
 ---
-title: "TurtleCoin Block Bot"
-date: 2018-06-12T12:14:34+06:00
-image: "images/portfolio/item-2.png"
+title: "TRTL-CLI-py"
+date: 2018-09-12T12:14:34+06:00
+image: "images/portfolio/trtl-cli-py.png"
 language: "Python"
-project_url : "https://github.com/Sajo8/turtlecoin-block-bot"
-categories: ["cryptocurrency"]
+project_url : "https://github.com/turtlecoin/turtlecoin-cli-py"
+categories: ["Cryptocurrency"]
 description: "This is meta description."
 draft: false
 ---

@@ -4,7 +4,7 @@ date: 2020-04-12T12:14:34+06:00
 image: "images/portfolio/scaling-out.png"
 language: "Godot, C#"
 project_url : "https://github.com/ojas-sanghi/scaling-out1/"
-categories: ["Video Game Dev"]
+categories: ["Video Game Dev."]
 description: "This is meta description."
 draft: false
 ---

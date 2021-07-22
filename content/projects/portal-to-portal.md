@@ -1,10 +1,10 @@
 ---
-title: "FBLA Quiz App"
-date: 2020-12-12T12:14:34+06:00
-image: "images/portfolio/fbla-quiz.png"
-language: "Python"
-project_url : "Client: https://github.com/ojas-sanghi/FBLA-Quiz \n Server: https://github.com/ojas-sanghi/FBLA-Quiz-Server"
-categories: ["App Development"]
+title: "Portal to Portal"
+date: 2020-01-12T12:14:34+06:00
+image: "images/portfolio/portal-to-portal.png"
+language: "Godot, GDScript"
+project_url : "https://github.com/ojas-sanghi/fbla-game/"
+categories: ["Video Game Dev."]
 description: "This is meta description."
 draft: false
 ---
