@@ -4,7 +4,7 @@ date: 2021-04-12T12:14:34+06:00
 image: "images/portfolio/ghs-concession.png"
 language: "HTML, CSS, JS"
 project_url : "https://ghs-concession.netlify.app/"
-categories: ["Website Dev."]
+categories: ["Web Development"]
 description: "This is meta description."
 draft: false
 ---
@@ -32,3 +32,5 @@ consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porr
 Ganado High School
 
 200+ students
+
+also originally made in godot: https://github.com/ojas-sanghi/GHS-Concession-Calculator-Godot

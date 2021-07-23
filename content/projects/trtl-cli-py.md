@@ -4,7 +4,7 @@ date: 2018-09-12T12:14:34+06:00
 image: "images/portfolio/trtl-cli-py.png"
 language: "Python"
 project_url : "https://github.com/turtlecoin/turtlecoin-cli-py"
-categories: ["Cryptocurrency"]
+categories: ["Cryptocurrency", "App Dev."]
 description: "This is meta description."
 draft: false
 ---
