@@ -1,5 +1,5 @@
 ---
-title: "Bit Buckets Vision Subsystem"
+title: "Bit Buckets Robotics"
 date: 2020-01-12T12:14:34+06:00
 image: "images/portfolio/item-3.png"
 language: "Java"
