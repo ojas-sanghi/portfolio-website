@@ -1,5 +1,5 @@
 # default configuration
-baseURL = "https://ojas-portfolio.netlify.app"
+baseURL = "https://ojas-sanghi.me"
 languageCode = "en-us"
 summaryLength = "10"
 theme = "kross"
