@@ -3,7 +3,7 @@ layout: full-width
 ---
 <div class="col-lg-12">
   <div class="row">
-    <div class="col-lg-3">
+    <div class="col-lg-4">
       <div class="card" id="profile-card">
         <a href="/">
           <img src="{{site.url}}{{site.baseurl}}/assets/img/{{ site.author_logo }}" class="profile-img" />
@@ -11,43 +11,61 @@ layout: full-width
         <h1 class="profile-name">{{ site.title }}</h1>
         <p class="profile-bio">{{ site.subtitle }}</p>
 
-        {% if site.author_location %}
         <h6>
           <i class="fas fa-map-marker-alt"></i> {{ site.author_location }}
         </h6>
-        {% endif %}
-        {% if site.author_email %}
         <h6>
           <i class="fas fa-envelope"></i> {{ site.author_email }}
         </h6>
-        {% endif %}
-        {% if site.author_website_url %}
         <h6>
           <i class="fas fa-link"></i> <a href="{{ site.author_website_url }}"> {{ site.author_website_url }} </a>
         </h6>
-        {% endif %}
 
         <br />
 
-        {% if site.github_username %}
         <h6>
           <i class="fab fa-github"></i> Personal: <a href="https://github.com/{{ site.github_username }}"> {{
             site.github_username }} </a>
         </h6>
-        {% endif %}
-        {% if site.pseudonym_github_username %}
         <h6>
           <i class="fab fa-github"></i> Pseudonym: <a href="https://github.com/{{ site.pseudonym_github_username }}"> {{
             site.pseudonym_github_username }} </a>
         </h6>
-        {% endif %}
 
       </div>
 
       <div class="card">
-        <h1>Education and Test Scores</h1>
+        <h1 class="card-title">About</h1>
+        <p>{{ site.author_bio }}</p>
+      </div>
 
-        {%- include education.html -%}
+      <div class="card">
+        <h1 class="card-title">Language Skills</h1>
+
+        <ul>
+          {% for exp in site.language_skills %}
+          <li> {{ exp.skill }} </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="card">
+        <h1 class="card-title">Volunteer Experience</h1>
+        <br />
+
+        {% for exp in site.volunteer %}
+        <div class="row">
+          <ul>
+            <li>
+              <h4 class="volunteer-title">{{ exp.title }}</h4>
+              <em>
+                <h6 class="volunteer-info">{{ exp.location_date}}</h6>
+              </em>
+              <p class="volunteer-desc">{{ exp.description }}</p>
+            </li>
+          </ul>
+        </div>
+        {% endfor %}
       </div>
 
       <!-- <div class="card">
@@ -56,56 +74,70 @@ layout: full-width
       </div> -->
 
     </div>
-    <div class="col-lg-5">
-      {% if site.author_bio %}
-      <div class="card">
-        <h1 class="card-title">About</h1>
-        <p>{{ site.author_bio }}</p>
-      </div>
-      {% endif %}
-
-      <div id="author_projects" class="card">
-        <h1 class="card-title">Projects</h1>
-        <br />
-        {% for project in site.author_project_details %}
-        <div class="row mt-3">
-          <div class="col-sm-6 col-md-6">
-            <img src="{{site.url}}{{site.baseurl}}/assets/img/projects/{{project.project_thumbnail}}" class="project-img" />
-          </div>
-          <div class="col-sm-6 col-md-6">
-            <h4 class="experience-title">{{ project.project_title }}</h4>
-            <h6 class="experience-info">{{ project.project_info}}</h6>
-            <p class="experience-desc">{{ project.project_description }}</p>
-            <p>
-              <a class="project-link" href="{{project.project_url}}">{{ project.project_url}}</a>
-            </p>
-          </div>
-        </div>
-        <br />
-        {% endfor %}
-      </div>
-
-    </div>
 
     <div class="col-lg-4">
       <div class="card">
         <h1 class="card-title">Activities</h1>
         <br />
+
         {% for exp in site.activities %}
         <div class="row">
-          <div class="col-sm-7 col-md-3">
-            <img src="{{site.url}}{{site.baseurl}}/assets/img/{{ exp.company_logo }}" class="company-logo" />
-          </div>
-          <div class="col-sm-3 col-md-7">
-            <h4 class="experience-title">{{ exp.title }}</h4>
-            <em>
-              <h6 class="experience-info">{{ exp.location_date}}</h6>
-            </em>
-            <p class="experience-desc">{{ exp.description }}</p>
-          </div>
+          <ul>
+            <li>
+              <h4 class="activities-title">{{ exp.title }}</h4>
+              <em>
+                <h6 class="activities-dates">{{ exp.location_date}}</h6>
+              </em>
+              <p class="activities-desc">{{ exp.description }}</p>
+            </li>
+          </ul>
         </div>
         {% endfor %}
       </div>
+    </div>
+
+
+    <div class="col-lg-4">
+      <div class="card">
+        <h1 class="card-title">Education and Test Scores</h1>
+        <br />
+
+        <p>
+          <b> University High School</b>, Tucson, AZ <em>(August 2018 - May 2022)</em>
+          <br>
+          Unweighted GPA — 4.0
+        </p>
+
+        <br> <br>
+
+        <ul>
+          {% for exp in site.education %}
+          <li> <b>{{ exp.test_score }}</b> — {{ exp.test_name }} </li>
+          {% endfor %}
+        </ul>
+
+      </div>
+
+
+      <div class="card">
+        <h1 class="card-title">Awards & Recognitions</h1>
+        <br />
+
+        {% for exp in site.awards %}
+        <div class="row">
+          <ul>
+            <li>
+              <h4 class="award-title">{{ exp.award_name }}</h4>
+              <em>
+                <h6 class="award-dates">{{ exp.award_dates}}</h6>
+              </em>
+              <p class="award-desc">{{ exp.award_description }}</p>
+            </li>
+          </ul>
+        </div>
+        {% endfor %}
+      </div>
+
     </div>
 
   </div>

@@ -562,10 +562,10 @@ header {
 .project_thumbnail{
     text-align: center;
 }
-// .project-img{
-//     width:150px;
-//     height:100px;
-// }
+.project-img{
+    width:150px;
+    height:100px;
+}
 .project_details{
     padding: 10px;
 }
@@ -660,10 +660,10 @@ header {
 }
 
 #author_projects {
-    // .project-img {
-    //     width: 300px;
-    //     height: 200px;
-    // }
+    .project-img {
+        width: 300px;
+        height: 200px;
+    }
     .project-link{
         color: var(--link-color);
     }

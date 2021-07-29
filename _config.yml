@@ -10,6 +10,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 urls:
     - text: Home
       url: /
+    - text: Projects
+      url: /projects
 
 
 # Edit Author details (For multi authors check _data/authors.yml)
@@ -21,20 +23,56 @@ author_email: "ojas.sanghi@protonmail.com"
 author_location: Arizona, USA
 author_website_url: "https://ojas-sanghi.me"
 
+language_skills:
+  - skill: English
+  - skill: Hindi (Native or Bilingual Proficiency)
+  - skill: French (Limited Working Proficiency)
+
 # Activities
 activities:
-  - title: Worked on various Google Products
-    location_date: AAAAAAAAAAAAAAAAAAAAAAA
-    description: :)))
-    company_logo: google.png
+  - title: President, Bit Buckets Robotics, Community FRC Team
+    location_date: Tucson, AZ (January 2021 - Present)
+    description: |
+      Conducted virtual meetings with ~20 students and mentors (working professionals) five times every week. Devised team strategy for a fully-remote season, including a final tournament with family spectators. Mediated communications between busy student leadership and mentors pressed for time.
+      <br> <br>
+      Ensured my team built and programmed three working robots from scratch over 6 weeks, entirely remotely. Designed the three robots to meet FRC international-level requirements.
+  
+  - title: Member, Bit Buckets Robotics, Community FRC Team
+    location_date: Tucson, AZ (October 2018 - Present)
+    description: |
+      Spent 15 hours a week for 8 weeks during the competition season planning, designing, coding, and testing a robot from scratch. Spent 6 hours a week for 15 weeks during the off-season learning and practicing FRC-specific code and software.
+      <br> <br>
+      There are 2 minutes and 15 seconds for the robot to score as many goals as possible on the playing field; most teams’ robots are manually controlled by humans, introducing human error and leading to missed shots. I developed a system to automate this process — as a result, our current robot intelligently and automatically aims towards the goal, sets the correct speed, and sets the correct angle. My automated system reduces human error, increases shot accuracy, and results in a huge competitive advantage for my team.
+  
+  - title: Tennis
+    location_date: Tucson, AZ (2019 - 2020)
+    description: |
+      Trained 5 hours a week for 20 weeks under USPTA tennis coaches. Gained proficiency in playing successful singles and doubles matches.
+      <br> <br>
+      Selected to compete in UHS tennis team for the Spring 2020 season against other top high schools in Arizona.
 
-  - title: Azure stuff
-    location_date: microsoft
-    description: asdasdadas
-    company_logo: microsoft.png
+  - title: Member, CyberPatriot Club
+    location_date: Tucson, AZ (2018 - 2019)
+    description: |
+      Competed in the Air Force Association’s cybersecurity education program, which aims to equip high school students with cybersecurity skills.
+      <br> <br>
+      Successfully secured a computer from ~50 cybersecurity threats in a 3 hour time limit during the annual competition.
+  
+  - title: Drama Level 1, 2, 3 Certifications, Trinity College London
+    location_date: (2017 - 2018)
+    description: |
+      Worked closely with personal drama teacher to hone my speech, body language, and acting skills. Performed a monologue, a pantomime, and an on-the-fly improvisation during the examination with a judge from England.
+      <br> <br>
+      Received the highest merit when being awarded Level 3 certification. Demonstrated high competence in the fundamental concepts of the performing arts.
+
+volunteer:
+  - title: Technician, RUHS Stage Crew
+    location_date: Tucson, AZ (September 2019 - Present)
+    description: Managed industry-level lighting system for and during major dance production. Gained experience with running light and audio system for school auditorium. Expanded upon skills as a stagehand, assisting tech crew. Temporarily paused due to Covid-19 pandemic.
+
 
 # Projects
-author_project_details:
+projects:
   - project_thumbnail: boomerang-bonanza.png
     project_title: Boomerang Bonanza
     project_description: A Platform built for Gamers and Game Devs
@@ -49,6 +87,46 @@ author_project_details:
     project_title: Penguin Dynamics
     project_description: A Platform built for Hackers and Penetration Testers
     project_url: https://hack4r.com
+
+education:
+  - test_score: 35
+    test_name: ACT, December 2020
+  - test_score: 5
+    test_name: AP United States History, May 2021
+  - test_score: 5
+    test_name: AP English Language and Composition, May 2021
+  - test_score: 5
+    test_name: AP Computer Science A, May 2020
+  - test_score: 5
+    test_name: AP European History, May 2020
+  - test_score: 5
+    test_name: AP Computer Science Principles, May 2019
+  - test_score: 5
+    test_name: AP Environmental Science, May 2019
+  - test_score: 5
+    test_name: AP Human Geography, May 2019
+    
+awards:
+  - award_name: 9-time First Place Award Winning Champion, Future Business Leaders of America Arizona
+    award_dates: March 2019, March 2020, March 2021
+    award_description: Won in multiple categories, including Cyber Security, Computer Problem Solving, and Coding and Programming
+
+  - award_name: First Place in the “Ambition” category in the University of Arizona DevFest Game Jam
+    award_dates: April 2020
+    award_description: Developed a strategy video game within 72 hours that combined different game genres
+    
+  - award_name: 3-time Academic Achievement Award Winner, Asian Pacific American and Refugee Student Services
+    award_dates: May 2019, May 2020, May 2021
+    award_description: Granted to students who earn a 3.25 unweighted GPA or higher through the first 3 quarters
+
+  - award_name: AP Scholar with Distinction, College Board
+    award_dates: May 2020
+    award_description: Granted to students who receive an average score of at least 3.5 on all AP Exams taken, and scores of 3 or higher on five or more of these exams
+
+  - award_name: AP Scholar, College Board
+    award_dates: May 2019
+    award_description: Granted to students who receive scores of 3 or higher on three or more AP Exams
+  
 
 # social links
 github_username: ojas-sanghi
