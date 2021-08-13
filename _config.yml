@@ -78,15 +78,17 @@ projects:
     project_description: A Platform built for Gamers and Game Devs
     project_url: https://gamershub.in
 
-  - project_thumbnail: chukwas-labyrinth.PNG
-    project_title: Chgukws's Labyrinth
-    project_description: A Platform built for Hackers and Penetration Testers
-    project_url: https://hack4r.com
-  
-  - project_thumbnail: penguin-dynamics.PNG
-    project_title: Penguin Dynamics
-    project_description: A Platform built for Hackers and Penetration Testers
-    project_url: https://hack4r.com
+  - project_title: Bit Buckets Robotics Wiki
+    project_date: May 2020
+    project_image: bit-buckets-wiki.png
+    project_language: HTML, CSS, JS
+    project_page_link: ../projects/bit-buckets-wiki/
+    project_url: "Website: https://bitbuckets-wiki.netlify.app/ GitHub: https://github.com/ojas-sanghi/bitbuckets-wiki"
+    project_categories: ["Robotics", "Web Development"]
+    project_meta_description: "This is a meta description"
+    project_body: "# Project Requirements
+    
+    asdasdasd"
 
 education:
   - test_score: 35

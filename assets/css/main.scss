@@ -6,3 +6,59 @@
 @import "devlopr";
 
 /* custom css goes below */
+
+.section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.section-title {
+    margin-bottom: 80px;
+    font-family: bwnistaint-xbd;
+}
+
+.bg-cover {
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.section-on-footer {
+    margin-bottom: -250px;
+}
+
+.hover-wrapper img {
+    transition: 0.3s ease;
+    transform: scale(1.1);
+}
+
+.hover-wrapper:hover img {
+    transform: scale(1);
+}
+
+.hover-wrapper:hover .hover-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.hover-wrapper:hover .hover-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.hover-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+
+.bg-gray {
+    background: #eaeaea !important;
+}

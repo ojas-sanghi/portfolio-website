@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<head>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<section class="section">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="btn-group btn-group-toggle justify-content-center d-flex flex-wrap" data-toggle="buttons">
+                    <label class="btn btn-sm btn-primary active">
+                        <input type="radio" name="shuffle-filter" value="all" checked="checked" />All
+                    </label>
+
+                </div>
+            </div>
+        </div>  
+        <div class="row shuffle-wrapper">
+            {% for project in site.projects %}
+            <div class="col-lg-4 col-6 mb-4 shuffle-item">
+                <div class="position-relative rounded hover-wrapper ">
+                    <button type="button" class="btn" style="padding: 0%;"
+                        onclick="window.location.href='{{project.project_page_link}}';">
+                        <img src="{{site.url}}{{site.baseurl}}/assets/img/projects/{{project.project_image}}" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
+                    </button>
+                    <div class="hover-overlay">
+                    </div>
+                </div>
+                <!-- title underneath card -->
+                <article class="card shadow bg-gray">
+                    <div class="card-body">
+                        <h4 class="card-title"><a class="text-dark" href="{{page.Permalink}}">{{ project.project_title }}</a>
+                        </h4>
+                    </div>
+                </article>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{{ end }}
+
+{{site.url}}{{site.baseurl}}/assets/img/projects/
