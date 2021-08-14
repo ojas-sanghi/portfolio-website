@@ -44,3 +44,64 @@ layout: default
 {{ end }}
 
 {{site.url}}{{site.baseurl}}/assets/img/projects/
+
+/// temp code that was removed
+
+                    <!-- <label class="btn btn-sm btn-primary">
+                        <input type="radio" name="shuffle-filter" value="{{ page.path | absolute_url }}" />{{ . |
+                        humanize }}
+                    </label> -->
+                    <!-- {{ end }} -->
+
+                    13-17
+
+
+                    <section class="section">
+                        <div class="container">
+                            <div class="row mb-5">
+                                <div class="col-12">
+                                    <div class="btn-group btn-group-toggle justify-content-center d-flex flex-wrap" data-toggle="buttons">
+                                        <label class="btn btn-sm btn-primary active">
+                                            <input type="radio" name="shuffle-filter" value="all" checked="checked" />All
+                                        </label>
+                                        {{ $categories := slice }}
+                                        {{ range .Data.Pages }}
+                                        {{ range .Params.categories }}
+                                        {{ $categories = $categories | append . }}
+                                        {{ end }}
+                                        {{ end }}
+                                        {{ range ( $categories | uniq ) }}
+                                        <label class="btn btn-sm btn-primary">
+                                            <input type="radio" name="shuffle-filter" value="{{ . | urlize }}" />{{ . | humanize }}
+                                        </label>
+                                        {{ end }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row shuffle-wrapper">
+                                {{ range .Data.Pages }}
+                                <div class="col-lg-4 col-6 mb-4 shuffle-item"
+                                    data-groups="[{{range $index, $element:= .Params.categories }}{{if ne $index 0}},{{end}}&quot;{{. | urlize}}&quot;{{ end }}]">
+                                    <div class="position-relative rounded hover-wrapper ">
+                                        <button type="button" class="btn" style="padding: 0%;"
+                                            onclick="window.location.href=' {{ .Permalink }} ';">
+                                            <img src="{{.Params.image | absURL }}" alt="portfolio-image"
+                                                class="img-fluid rounded w-100 d-block">
+                                        </button>
+                                        <div class="hover-overlay">
+                                        </div>
+                                    </div>
+                                    <!-- title underneath card -->
+                                    <article class="card shadow bg-gray">
+                                        <div class="card-body">
+                                            <h4 class="card-title"><a class="text-dark" href="{{.Permalink}}">{{.Title }}</a>
+                                            </h4>
+                                        </div>
+                                    </article>
+                    
+                                </div>
+                                {{ end }}
+                            </div>
+                        </div>
+                    </section>
+                    {{ end }}E
